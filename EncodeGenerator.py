@@ -7,8 +7,8 @@ from firebase_admin import credentials, db, storage
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL':"https://facerecognitionrealtime-26202-default-rtdb.firebaseio.com/",
-    'storageBucket':"facerecognitionrealtime-26202.appspot.com"
+    'databaseURL':"",
+    'storageBucket':""
 })
 
 

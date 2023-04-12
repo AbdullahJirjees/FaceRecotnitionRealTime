@@ -10,8 +10,8 @@ from datetime import datetime
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL':"https://facerecognitionrealtime-26202-default-rtdb.firebaseio.com/",
-    'storageBucket':"facerecognitionrealtime-26202.appspot.com"
+    'databaseURL':"",
+    'storageBucket':""
 })
 
 bucket = storage.bucket()
@@ -137,7 +137,7 @@ while True:
     else:
         modeType = 0 
         counter = 0
-        
+
     #cv2.imshow("Webcam", img)
     cv2.imshow("Student Attendance", imgBackground)
     cv2.waitKey(1) 
